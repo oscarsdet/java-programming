@@ -1,0 +1,22 @@
+Arrays class -> is a utility class for arrays, it contains many useful methods.
+ex -> sort, toString, equals, binarySearch
+
+asList () is another method in Arrays class.
+It will convert an array to arrayList
+
+Arrays.asList(10, 4, 5, 3);
+
+int [] array = {23, 54, 23, 454, 23};
+
+Arrays.asList(array) -> this is converting array to arrayList
+_____________________________________________________________________________________
+How to create and assign values to ArrayList in 1 statement.
+we can use Arrays.asList method.
+1) List<Double> nums1 = Arrays.asList(23, 54, 1, 2.2);
+Disadvantage: nums1 is fixed size, cannot change the size by adding
+or removing values.
+It will work for any other ArrayList methods.
+add, remove, clear --> Cannot be used contains, get, isEmpty-  or any otehr methods that does not change the size --> can be sued.
+20 List<Doguble> nums 2 = new ArrayList<>(Arrays. asList. etc ->
+
+

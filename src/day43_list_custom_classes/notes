@@ -1,0 +1,189 @@
+CLASSNOTES DAY 43
+
+05/08/2021
+----------
+
+java programming day 43
+-----------------------
+
+HP QTP/UFT | Selenium + Java/C#
+
+Java > Html > Selenium
+
+Selenium is flagged as Bot
+-------------------------
+
+Capcha is another blocker.
+
+
+ArrayList
+Custom classes - OOP start
+
+ArrayList is most popular Data structure in Java.
+It is also widely used with Selenium Automation
+Ex:
+List<WebElement> elements = new ArrayList<>();
+mostly
+List<WebElement> elements = driver.findElements(By...);
+
+Last class we did few examples for custom methods with ArrayList.
+
+public static void methodA(int n) {
+}
+
+methodA(12);
+-------------------
+public static void methodA(int[] n) {
+....
+}
+
+int[] nums = {12, 34, 55};
+methodA(nums);
+-------------------
+public static void methodA(ArrayList<Integer> n) {
+....
+}
+
+ArrayList<Integer> nums = new ArrayList<>();
+nums.add(34);
+nums.add(4);
+methodA(nums);
+
+-------------------
+public static void methodA(List<Integer> n) {
+....
+}
+
+methodA(Arrays.asList(34, 55, 765));
+-------------------
+
+public static int methodB() {
+    return 5;
+}
+
+int ret = methodB();
+-------------------
+public static int[] methodB() {
+    int[] nums = {3, 6, 3};
+    return nums;
+}
+
+int[] array = methodB();
+--------------------
+public static List<Integer> methodB() {
+    List<Integer> nums = new ArrayList<>();
+    nums.add(12); nums.add(44); nums.add(11);
+    return nums;
+}
+
+List<Integer> list = methodB();
+println(list);
+[12, 44, 11]
+
+add new package day43_list_custom_classes
+
+add new class MethodsWithListReturn
+
+List<Integer> nums = new ArrayList<>();
+for(int i = 0; i <= 1000_000; i++) {
+    nums.add(i);
+}
+
+return nums;
+
+int[] nums = new int[1000_001];
+for(int i = 0; i <= 1000_000; i++) {
+    nums[i] = i;
+}
+===========================
+
+add new class ListMethods
+
+add new method getDays
+
+no params
+
+return List<String> with "Monday, Tuesday, Wednesday ..."
+-------------------------------------------
+Ali Ak — Today at 12:32 PM
+let s have a block  break at 12 50 until 2
+
+- methods with arraylist
+- System.nanoTime(); is used to capture nanoseconds of code execution
+- removeIf method in ArrayList
+
+List<Integer> nums = new ArrayList<>();
+nums.add(10);
+nums.add(5);
+nums.add(1);
+nums.add(25);
+nums.add(35);
+
+Lambda expression with removeIf
+nums.removeIf(n -> n > 10); //remove all numbers more than 10
+print nums: 10, 5, 1
+
+nums.removeIf(n -> n % 2 != 0); //remove all odd numbers
+print nums: 10
+
+surveys ->
+send email :
+    training@cybertekschool.com
+    support@cybertekschool.com
+    kuzzat@cybertekschool.com
+===============================
+
+OBJECT ORIENTED PROGRAMMING
+OBJECT ORIENTED DESIGN
+
+Writing programs using different classes and objects
+
+Java is OOP language. We write java classes that work together in our java programs.
+
+Everything is java is objects except primitives.
+
+CLASS -> is a template for an object, it will contain data and behaviour.
+OBJECT -> instance of the class. We create objects from classes
+------------------------
+
+add new class Person
+
+public class Person {
+    //Data -> variables
+    String firstName;
+    int age;
+    char gender;
+    //behaviour
+}
+
+IN java class, we can add DATA - variables
+                          BEHAVIOUR - methods
+
+From a class, we can create multiple objects. We use new keyword to create object/instantiate
+
+Person p1 = new Person();
+Person p2 = new Person();
+
+Each object will have the variables and methods that are listed in the Class.
+
+Each object will have their own copy of the variables, if we change value in object variable, it will not affect another one.
+
+p1.firstName = "Muhammad";
+p2.firstName = "Sarah";
+
+p1.age = 3;
+p2.age = 5;
+
+p1.gender = 'M';
+p2.gender = 'F';
+--------------------------
+
+add new class Employee
+
+data: name, jobTitle
+bahaviour: work
+
+add new class Company
+add 3 objects of Employee
+assign name and job titles.
+call method
